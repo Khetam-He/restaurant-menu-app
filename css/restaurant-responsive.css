@@ -59,12 +59,12 @@
      #restaurant-hours{
          margin: 8% 0px;
          width: 90%;
-         margin-left: 15px;
+         margin-left: 6%;
     }
      #reviews-container {
          padding: 30px 10% 80px;
          width: 70%;
-         margin-left: 10px;
+         margin-left: 6%;
     }
      #reviews-list {
          margin: 0;
@@ -139,6 +139,7 @@
          padding: 140px 20px 30px;
          text-align: left;
          width: 50%;
+         margin-left: 0px;
     }
      #restaurant-cuisine {
          background-color: #333;

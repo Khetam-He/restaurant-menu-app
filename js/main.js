@@ -146,7 +146,7 @@ createRestaurantHTML = (restaurant) => {
     image.tabIndex = 0;
 
     li.append(image);
-    const name = document.createElement('h2');
+    const name = document.createElement('h3');
     name.className = 'restaurant-name'
     name.innerHTML = restaurant.name;
     name.tabIndex = 0;
