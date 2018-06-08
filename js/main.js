@@ -3,7 +3,6 @@ let restaurants,
   cuisines
 var map
 var markers = []
-
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
@@ -31,6 +30,7 @@ fetchNeighborhoods = () => {
  */
 fillNeighborhoodsHTML = (neighborhoods = self.neighborhoods) => {
   const select = document.getElementById('neighborhoods-select');
+  document.querySelector('#neighborhoods-select').focus();
   neighborhoods.forEach(neighborhood => {
     const option = document.createElement('option');
     option.innerHTML = neighborhood;
@@ -58,7 +58,7 @@ fetchCuisines = () => {
  */
 fillCuisinesHTML = (cuisines = self.cuisines) => {
   const select = document.getElementById('cuisines-select');
-
+  document.querySelector('#cuisines-select').focus();
   cuisines.forEach(cuisine => {
     const option = document.createElement('option');
     option.innerHTML = cuisine;
@@ -81,6 +81,7 @@ window.initMap = () => {
     scrollwheel: false
   });
   updateRestaurants();
+
 }
 
 /**
@@ -140,19 +141,26 @@ createRestaurantHTML = (restaurant) => {
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
+  image.alt = "Restaurant image"
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
-  li.append(image);
+  image.tabIndex = 0;
 
+  li.append(image );
   const name = document.createElement('h1');
-  name.innerHTML = restaurant.name;
-  li.append(name);
+  name.className ='restaurant-name'
+    name.innerHTML = restaurant.name;
+    name.tabIndex = 0;
+    li.append(name);
 
   const neighborhood = document.createElement('p');
   neighborhood.innerHTML = restaurant.neighborhood;
+  neighborhood.tabIndex = 0;
+
   li.append(neighborhood);
 
   const address = document.createElement('p');
   address.innerHTML = restaurant.address;
+  address.tabIndex = 0;
   li.append(address);
 
   const more = document.createElement('a');
@@ -160,7 +168,9 @@ createRestaurantHTML = (restaurant) => {
   more.href = DBHelper.urlForRestaurant(restaurant);
   li.append(more)
 
+ 
   return li
+
 }
 
 /**
@@ -176,3 +186,14 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 }
+  function restaurantFocus(){
+  if(( document.querySelector('#restaurant-img'))!=null){
+   console.log('detect li ');
+  document.querySelector('#restaurant-img').focus();
+  document.querySelector('#restaurant-name').focus();
+  document.querySelector('#restaurant-address').focus();
+}
+else     console.log('not found');
+}
+
+

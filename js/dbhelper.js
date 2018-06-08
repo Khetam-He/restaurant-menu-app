@@ -1,6 +1,7 @@
 /**
  * Common database helper functions.
  */
+
 class DBHelper {
 
   /**
@@ -9,7 +10,7 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     const port = 8000 // Change this to your server port
-    return `http://localhost/FEND/restaurant-menu/data/restaurants.json`;
+    return `http://localhost/FEND//%E2%80%8F%E2%80%8Frestaurant-menu-2/restaurant-menu-app/data/restaurants.json`;
   }
 
   /**
@@ -166,5 +167,6 @@ class DBHelper {
     );
     return marker;
   }
+
 
 }
