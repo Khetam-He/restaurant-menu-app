@@ -2,50 +2,50 @@
 <html>
 
 <head>
-  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Restaurant Reviews</title>
+    <title>Restaurant Reviews</title>
 </head>
 
 <body>
-  <header>
-    <nav role="headder">
-      <h1 tabindex="0"><a href="/">Restaurant Reviews</a></h1>
-       <h3><a href="#filter-options">Skip to Main content</a></h3>
+    <header>
+        <nav role="headder">
+            <h1 tabindex="0"><a href="/">Restaurant Reviews</a></h1>
+            <h3><a href="#filter-options">Skip to Main content</a></h3>
 
-    </nav>
-  </header>
+        </nav>
+    </header>
 
-  <main id="maincontent">
-    <section id="map-container" >
-      <div id="map" tabindex="-1" role="Google map"></div>
-    </section>
-    <section>
-      <div id="filter-options" class="filter-options" tabindex="-1" role="filter-options">
-        <h2 tabindex="0">Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" tabindex="0">
+    <main id="maincontent">
+        <section id="map-container">
+            <div id="map" tabindex="-1" role="Google map"></div>
+        </section>
+        <section>
+            <div id="filter-options" class="filter-options" tabindex="-1" role="filter-options">
+                <h2 tabindex="0">Filter Results</h2>
+                <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" tabindex="0">
           <option value="all" tabindex="0">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" tabindex="0">
+                <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" tabindex="0">
           <option value="all" tabindex="0">All Cuisines</option>
         </select>
-      </div>
-      <ul id="restaurants-list" role="restaurants-info" ></ul>
-    </section>
-  </main>
+            </div>
+            <ul id="restaurants-list" role="restaurants-info"></ul>
+        </section>
+    </main>
 
-  <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
-  <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
-  <script type="application/javascript" charset="utf-8" src="js/app.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfQPpFKfgkuZ9ZDYmNy165S4IAZauv4K4&libraries=places&callback=initMap"></script>
+    <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+    <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
+    <script type="application/javascript" charset="utf-8" src="js/app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfQPpFKfgkuZ9ZDYmNy165S4IAZauv4K4&libraries=places&callback=initMap"></script>
 
 
-  <footer id="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
-  </footer>
+    <footer id="footer">
+        Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    </footer>
 
 </body>
 
