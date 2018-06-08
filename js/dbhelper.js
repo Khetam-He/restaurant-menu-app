@@ -9,7 +9,7 @@ class DBHelper {
    * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    const port = 8000 // Change this to your server port
+    const port = 9997 // Change this to your server port
     return `http://localhost/FEND//%E2%80%8F%E2%80%8Frestaurant-menu-2/restaurant-menu-app/data/restaurants.json`;
   }
 
