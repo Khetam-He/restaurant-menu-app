@@ -1,5 +1,13 @@
 @media screen and (min-width: 250px ){
  
+ #maincontent {
+  background-color: #f3f3f3;
+  min-height: 100%;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
  .filter-options {
   width: 100%;
   height: 120px;
@@ -20,7 +28,7 @@
   display:inline-flex;
   flex-wrap: wrap;
   margin: 25px;
-  margin-left: 0px;
+  margin-left: 25px;
   padding: 20px 10px 40px;
   align-content: center;
   text-align: center;
@@ -97,6 +105,15 @@ nav h1 a {
 }
  
 @media screen and (min-width: 400px ){
+ #maincontent {
+  background-color: #f3f3f3;
+  min-height: 100%;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+    
  #restaurants-list {
   margin-left: 30px;
   
@@ -117,6 +134,14 @@ nav h1 a {
 }
 
 @media screen and (min-width: 500px ){
+ #maincontent {
+  background-color: #f3f3f3;
+  min-height: 100%;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
  #restaurants-list {
   margin-left: 60px;
   }
@@ -153,8 +178,16 @@ nav h1 a {
 }
 
 @media screen and (min-width: 630px ){
+ #maincontent {
+  background-color: #f3f3f3;
+  min-height: 100%;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
  #restaurants-list {
-  margin-left: 15px;
+  margin-left: 12%;
   display: flex;
   flex-wrap: wrap;
   
@@ -187,6 +220,14 @@ nav h1 a {
 
 
  @media screen and (min-width: 800px){
+  #maincontent {
+  background-color: #f3f3f3;
+  min-height: 100%;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
    #restaurants-list {
   margin-left: 35px;
   display: flex;
@@ -218,8 +259,9 @@ nav h1 a {
 
 @media screen and (min-width: 900px){
   #restaurants-list {
-  margin-left: 15px;
-  display: flex;
+   margin-left: 11%;
+   margin-right: 11%;
+   display: inline-flex;
   flex-wrap: wrap;
   }
 
